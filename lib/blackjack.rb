@@ -18,9 +18,10 @@ def deal_card
 end
 
 def display_card_total
-  # code #display_card_total here
-end
-
+  do
+  it "accepts one argument, the card total" do
+    expect { display_card_total(7) }.to_not raise_error
+  end
 def prompt_user
   # code #prompt_user here
 end
