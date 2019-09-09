@@ -7,7 +7,14 @@ do
 end
 
 def deal_card
-  # code #deal_card here
+  do
+  it "generates a random number between 1-11" do
+    20.times do 
+      card = deal_card
+      expect(card).to be > 0
+      expect(card).to be < 12
+    end
+  end
 end
 
 def display_card_total
