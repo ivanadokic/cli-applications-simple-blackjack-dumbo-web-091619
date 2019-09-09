@@ -5,7 +5,6 @@ do
     welcome
   end
 end
-end
 
 def deal_card
   # code #deal_card here
