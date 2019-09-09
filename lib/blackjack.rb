@@ -27,9 +27,14 @@ def prompt_user
 end
 
 def get_user_input
-  # code #get_user_input here
+   do
+  it "returns the value of a `gets.chomp` method" do
+    ["h", "s", "exit"].each do |string|
+      expect(self).to receive(:gets).and_return(string)
+      expect(get_user_input).to eq(string)
+    end
+  end
 end
-
 def end_game
   # code #end_game here
 end
